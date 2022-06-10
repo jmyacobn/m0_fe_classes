@@ -1,17 +1,53 @@
 // Write a class called Unicorn
 // it should have a dynamic name property
 // it should have a color property, that is silver by default
-// it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
+// it should have a method called "say" that returns whatever string is passed in,
+//with "*~*" at the beginning and end of the string
+class Unicorn {
+  constructor(name) {
+    this.name = name;
+    this.color = "silver";
+    this.say = "I am hungry!"
+  }
+  changeSay(newSay) {
+    this.say = newSay;
+  }
+}
 
+var uni1 = new Unicorn("Sparkles");
+console.log(uni1);
 
+uni1.changeSay('*~*I am hungry!*~*');
+console.log(uni1);
 
 // Write a class called Vampire
 // it should have a dynamic name property
-// it should have a pet property, that is a bat, by default BUT it could be dynamic if info is passed in initially
+// it should have a pet property, that is a bat, by default
+//    BUT it could be dynamic if info is passed in initially
 // it should have a thirsty property, that is true by default
 // it should have a drink method. When called, the thirsty property changes to false
+class Vampire {
+  constructor(name) {
+    this.name = name;
+    this.pet = "bat";
+    this.thirsty = true;
+  }
+  changePet(newPet) {
+    this.pet = newPet;
+  }
+  changeThirsty(newThirsty) {
+    this.thirsty = newThirsty;
+  }
+}
 
+var vamp1 = new Vampire("Norman");
+console.log(vamp1);
 
+vamp1.changeThirsty(false);
+console.log(vamp1);
+
+vamp1.changePet("lion");
+console.log(vamp1);
 
 //  Write a Dragon class
 // it should have a dynamic name property (string)
