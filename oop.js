@@ -56,8 +56,28 @@ console.log(vamp1);
 //  it should have a isHungry property that is true by default
 //  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
   // HINT: This requires you to use your knowledge from the conditionals lesson
+class Dragon {
+  constructor(name, rider, color) {
+    this.name = name;
+    this.rider = rider;
+    this.color = color;
+    this.isHungry = true
+    this.eat = 4;
+  }
+  changeEat(newEat) {
+    this.eat = newEat;
+    if (this.eat >= 4) {
+      this.isHungry = true;
+    } else {
+      this.isHungry = false;
+    }
+  }
+}
+var drag1 = new Dragon ("Puff the Magic Dragon", "Arthur", "Orange");
+console.log(drag1);
 
-
+drag1.changeEat(1);
+console.log(drag1);
 
 //  BIG CHALLNEGE: Write a Hobbit class
 //  it should have a dynamic name property (string)
