@@ -84,6 +84,18 @@ console.log(drag1);
 //  it should have a dynamic disposition property (string)
 //  it should have an age property that defaults to 0
 //  it should have a celebrateBirthday method. When called, the age increases by 1
-//  it should have an isAdult property (boolean) that is false by default. once a Hobbit is 33, it should be an adult
+//  it should have an isAdult property (boolean) that is false by default. once a Hobbit is 33,
+//  it should be an adult
 //  it should have an isOld property that defaults to false. once a Hobbit is 101, it is old.
 //  it should have a hasRing property. If the Hobbit's name is "Frodo", true, if not, false.
+
+class Hobbit {
+  constructor(name, disposition) {
+    this.name = name;
+    this.disposition = disposition;
+    this.age = 0;
+    this.isAdult = false;
+    this.isOld = false;
+    this.hasRising = true;
+    }
+}
