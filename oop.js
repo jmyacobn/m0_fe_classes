@@ -17,7 +17,7 @@ class Unicorn {
 var uni1 = new Unicorn("Sparkles");
 console.log(uni1);
 
-uni1.changeSay('*~*I am hungry!*~*');
+uni1.changeSay('*~*${uni1.say}*~*');
 console.log(uni1);
 
 // Write a class called Vampire
@@ -120,3 +120,9 @@ console.log(hob1);
 
 hob1.celebrateBirthday(29);
 console.log(hob1);
+
+var hob2 = new Hobbit("Frodo", "angry");
+console.log(hob2);
+
+hob2.celebrateBirthday(103);
+console.log(hob2);
