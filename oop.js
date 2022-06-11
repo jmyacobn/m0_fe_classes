@@ -96,23 +96,27 @@ class Hobbit {
     this.age = 0;
     this.isAdult = false;
     this.isOld = false;
-    this.hasRing = true;
-      if (this.name === "Frodo") {
-        this.hasRing = true}
-
+    this.hasRing = false;
     }
     celebrateBirthday(newAge) {
-      this.Age = this.Age + 1;
+      this.age = newAge;
+      for(var newAge = 0; newAge < this.age; newAge++)
+
       if (this.age >= 33) {
         this.isAdult = true;
     }
-      else {
-        this.isAdult = false;
-    }
+
       if (this.age >= 101) {
         this.isOld = true;
     }
-      else {
-        this.isOld = false;
-    }
+
+      if (this.name === "Frodo") {
+        this.hasRing = true}
 }
+}
+
+var hob1 = new Hobbit("Charlie", "angry");
+console.log(hob1);
+
+hob1.celebrateBirthday(29);
+console.log(hob1);
